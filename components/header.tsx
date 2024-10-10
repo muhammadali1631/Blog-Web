@@ -7,11 +7,13 @@ import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
   const [attr, setAttr] = useState('hidden'); // Changed 'let' to 'const'
+  const [attr2, setAttr2] = useState('block'); // Changed 'let' to 'const'
   const [isOpen, setIsOpen] = useState(false); // Changed 'let' to 'const';
 
   const openMenu = () => {
     setIsOpen(!isOpen); // Toggle the menu state
     setAttr(isOpen ? 'hidden' : 'block'); // Set attr based on menu state
+    setAttr2(isOpen ? 'block' : 'hidden'); // Set attr based on menu state
   }
 
   return (
@@ -25,8 +27,8 @@ const Header = () => {
                 <Link href='/contact'><li>Contact</li></Link>
                 <Link href='/blogs'><li>Blog</li></Link>
             </ul>
-            <h1 onClick={openMenu} className='menu text-2xl md:hidden text-white'><IoMenu/></h1>
-            <h1 onClick={openMenu} className={`cross ${attr} text-2xl md:hidden text-white`}><RxCross2/></h1> {/* Show cross icon based on attr */}
+            <h1 onClick={openMenu} className={`menu text-2xl md:hidden text-white ${attr2}`}><IoMenu/></h1>
+            <h1 onClick={openMenu} className={`cross ${attr} text-2xl md:hidden text-white`}><RxCross2/></h1> 
         </nav>
         </div>
         <div className={`me md:hidden h-40 bg-[#09003d] w-full ${attr}`}>
