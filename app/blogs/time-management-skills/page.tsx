@@ -1,12 +1,13 @@
 import React from 'react'
 import data from '@/data/data'
 import BlogSider from '@/components/blogsider'
+import Image from 'next/image'
 
 const TimeManagement = () => {
   return (
     <div className='h-full w-[100%] flex justify-center'>
         <div className='w-[100%] lg:w-[80%] p-10 flex flex-col items-center'>
-            <img src={data[2].image} alt="Latest web devlopment" className='scale-in-center w-[90%] md:h-[50vh] object-cover rounded-xl md:w-[85%]'/>
+            <Image src={data[2].image} alt="Latest web devlopment" className='scale-in-center w-[90%] md:h-[50vh] object-cover rounded-xl md:w-[85%]' width={0} height={0}/>
             <h1 className='my-10 text-3xl font-bold'>{data[2].title}</h1>
             <p className='text-center w-[85%] text-xl'>{data[2].description.content}</p>
             <div className='w-[85%]'>

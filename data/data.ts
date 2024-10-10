@@ -1,4 +1,11 @@
 import { title } from "process";
+import webdevelopment from "@/images/site-2.webp"
+import javascript from "@/images/javascript.jpg"
+import three from "@/images/3rd.jpg"
+import four from "@/images/4th.png"
+import five from "@/images/5th.jpg"
+import six from "@/images/6th.webp"
+
 
 let data = [
 {
@@ -16,7 +23,7 @@ let data = [
         heading5: "5. Headless CMS and API-First Development",
         des5: "Headless content management systems (CMS) separate the back-end content management from the front-end presentation layer. This trend has led to the rise of API-first development, where websites and applications are built by consuming APIs. It allows developers to deliver content across various platforms—web, mobile, and even IoT devices—while using a single backend."
     },
-    image: "https://triare.net/wp-content/uploads/2024/01/site-2.png",
+    image: webdevelopment,
     tags: ["JavaScript", "TypeScript", "Programming Languages", "tecnology", "top blog"],
     link: '/blogs/web-development-trends'
 
@@ -34,7 +41,7 @@ let data = [
         heading5: "Ease of Learning:",
         des5: "JavaScript is relatively easy to learn for beginners. Its dynamic nature allows developers to get up and running quickly without having to worry about specifying data types.",
     },
-    image: "https://tsh.io/wp-content/uploads/2020/09/typescript-vs-javascript-comparison_.jpg",
+    image: javascript,
     tags: ["JavaScript", "TypeScript", "Programming Languages", "tecnology", "top blog"],
     link: '/blogs/javascript-and-typescript'
 
@@ -54,7 +61,7 @@ let data = [
         heading5: "Learn to Say No",
         des5: "One of the biggest challenges to effective time management is taking on too many commitments. While it can be tempting to say “yes” to every request or opportunity, doing so can overwhelm you and spread your attention too thin. Learning to say “no” to non-essential tasks allows you to protect your time and energy for the activities that align with your goals."
     },
-    image: "https://images.squarespace-cdn.com/content/v1/56acc1138a65e2a286012c54/1587053683921-RPMQIPHXBQFOIZOXRTGD/time-management-1966396_1920.jpg?format=1000w",
+    image: three,
     tags: ["personal development", "top blog"],
     link: "/blogs/time-management-skills"
 },
@@ -74,7 +81,7 @@ let data = [
         heading5: "Creating a Productive Study Environment",
         des5: "Your study environment plays a critical role in your ability to concentrate and stay productive. A cluttered, noisy space can lead to distractions and mental fatigue. To optimize your environment, find a quiet, organized space free from interruptions. Make sure your desk is clean, your materials are readily accessible, and your phone is silenced or placed out of sight. Good lighting and a comfortable chair can also enhance focus, helping you stay on task for longer periods. By creating a dedicated study zone, you signal to your brain that it’s time to work, making it easier to get into a productive mindset."
     },
-    image: "https://www.calendar.com/wp-content/uploads/2018/05/34-Productivity-Hacks-for-Students-and-Entrepreneurs.png",
+    image: four,
     tags : ["personal development"],
     link: '/blogs/productivity-hack-for-students'
 },
@@ -95,7 +102,7 @@ let data = [
 
     },
     tags: ["health and fitness", "health"],
-    image: 'https://www.diabetessa.org.za/wp-content/uploads/2023/02/Beginners-guide-to-healthy-eating.jpg',
+    image: five,
     link: "/blogs/guide-to-balance-diet"
     
 },
@@ -115,7 +122,7 @@ let data = [
         des5: "Loving-kindness meditation, also known as Metta meditation, focuses on cultivating compassion and positive feelings toward yourself and others. This technique is especially beneficial for reducing stress related to interpersonal relationships or feelings of frustration.",
     },
     tags: ["health"],
-    image:"https://assets.gqindia.com/photos/606dd3686ec822b9cff0bee6/16:9/w_2560%2Cc_limit/top-image%2520(25).jpg",
+    image: six,
     link: "/blogs/meditation-techniques"
 }]
 

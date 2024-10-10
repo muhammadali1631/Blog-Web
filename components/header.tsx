@@ -1,12 +1,6 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
-// import { IoMdMenu } from "react-icons/ci";
-import { RxCross2 } from "react-icons/rx";
-
-
-
-
 
 const Header = () => {
   // const Menu = document.querySelector('.me') as HTMLDivElement;
