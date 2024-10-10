@@ -6,15 +6,12 @@ import { IoMenu } from "react-icons/io5";
 
 
 const Header = () => {
-  let [Attr, setAttr] = useState('hidden') 
-  let [Attr2, setAttr2] = useState('block') 
-  let [isOpen, setIsOpen] = useState(false);
-
+  const [attr, setAttr] = useState('hidden'); // Changed 'let' to 'const'
+  const [isOpen, setIsOpen] = useState(false); // Changed 'let' to 'const';
 
   const openMenu = () => {
-    setIsOpen(!isOpen);
-    setAttr(isOpen ? 'hidden' : 'block');
-    setAttr2(isOpen ? 'block' : 'hidden')
+    setIsOpen(!isOpen); // Toggle the menu state
+    setAttr(isOpen ? 'hidden' : 'block'); // Set attr based on menu state
   }
 
   return (
@@ -28,11 +25,11 @@ const Header = () => {
                 <Link href='/contact'><li>Contact</li></Link>
                 <Link href='/blogs'><li>Blog</li></Link>
             </ul>
-            <h1 onClick={openMenu} className={`${Attr2} cursor-pointer text-3xl md:hidden text-white`}><IoMenu/></h1>
-            <h1 onClick={openMenu} className={`${Attr} text-3xl md:hidden text-white`}><RxCross2/></h1>
+            <h1 onClick={openMenu} className='menu text-2xl md:hidden text-white'><IoMenu/></h1>
+            <h1 onClick={openMenu} className={`cross ${attr} text-2xl md:hidden text-white`}><RxCross2/></h1> {/* Show cross icon based on attr */}
         </nav>
         </div>
-        <div className={`me md:hidden h-40 bg-[#09003d] w-full ${Attr}`}>
+        <div className={`me md:hidden h-40 bg-[#09003d] w-full ${attr}`}>
         <ul className='grid justify-center  items-center gap-3 text-center text-xl '>
                 <Link href='/'><li>Home</li></Link>
                 <Link href='/about'><li>About</li></Link>
