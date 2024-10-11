@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header className=''>
-        <div className='flex justify-between items-center py-6 px-12 backdrop-blur-md bg-[#09003d]'>
+        <div className='flex justify-between items-center py-6 px-6 sm:px-12 backdrop-blur-md bg-[#09003d]'>
         <Link href='/'><h1 className='text-2xl font-bold'>BlogByAli</h1></Link>
         <nav>
             <ul className='hidden md:flex gap-8 text-xl '>
@@ -36,7 +36,7 @@ const Header = () => {
                 <Link href='/'><li>Home</li></Link>
                 <Link href='/about'><li>About</li></Link>
                 <Link href='/contact'><li>Contact</li></Link>
-                <Link href='/blog'><li>Blog</li></Link>
+                <Link href='/blogs'><li>Blog</li></Link>
             </ul>
         </div>
     </header>
