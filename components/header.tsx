@@ -19,13 +19,13 @@ const Header = () => {
   return (
     <header className=''>
         <div className='flex justify-between items-center py-6 px-6 sm:px-12 backdrop-blur-md bg-[#09003d]'>
-        <Link href='/'><h1 className='text-2xl font-bold'>BlogByAli</h1></Link>
+        <Link href='/'><h1 className='text-2xl font-bold hover:underline hover:scale-110 hover:duration-300 hover:ease-in-out'>BlogByAli</h1></Link>
         <nav>
             <ul className='hidden md:flex gap-8 text-xl '>
-                <Link href='/'><li>Home</li></Link>
-                <Link href='/about'><li>About</li></Link>
-                <Link href='/contact'><li>Contact</li></Link>
-                <Link href='/blogs'><li>Blog</li></Link>
+                <Link href='/'><li className='hover:underline hover:scale-110 hover:duration-300 hover:ease-in-out' >Home</li></Link>
+                <Link href='/about'><li className='hover:underline hover:scale-110 hover:duration-300 hover:ease-in-out'>About</li></Link>
+                <Link href='/contact'><li className='hover:underline hover:scale-110 hover:duration-300 hover:ease-in-out'>Contact</li></Link>
+                <Link href='/blogs'><li className='hover:underline hover:scale-110 hover:duration-300 hover:ease-in-out'>Blog</li></Link>
             </ul>
             <h1 onClick={openMenu} className={`menu text-2xl md:hidden text-white ${attr2}`}><IoMenu/></h1>
             <h1 onClick={openMenu} className={`cross ${attr} text-2xl md:hidden text-white`}><RxCross2/></h1> 
