@@ -6,14 +6,14 @@ import { IoMenu } from "react-icons/io5";
 
 
 const Header = () => {
-  const [attr, setAttr] = useState('hidden'); // Changed 'let' to 'const'
-  const [attr2, setAttr2] = useState('block'); // Changed 'let' to 'const'
-  const [isOpen, setIsOpen] = useState(false); // Changed 'let' to 'const';
+  const [attr, setAttr] = useState('hidden'); 
+  const [attr2, setAttr2] = useState('block');
+  const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => {
-    setIsOpen(!isOpen); // Toggle the menu state
-    setAttr(isOpen ? 'hidden' : 'block'); // Set attr based on menu state
-    setAttr2(isOpen ? 'block' : 'hidden'); // Set attr based on menu state
+    setIsOpen(!isOpen);
+    setAttr(isOpen ? 'hidden' : 'block');
+    setAttr2(isOpen ? 'block' : 'hidden');
   }
 
   return (
